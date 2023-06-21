@@ -189,9 +189,12 @@ Aşağıdakileri yapmak için ismeGoreFiltrele işlevini kullanın:
 */
 
 function ismeGoreFiltrele(g7dizi, g7string) {
-  let g7yenidizi = [];
-  if (g7yenidizi.includes(g7string) == true) {
-    g7yenidizi.push();
+  const g7yenidizi = [];
+
+  for (let i = 0; i < g7dizi.length; i++) {
+    if (g7dizi[i].includes(g7string)) {
+      g7yenidizi.push(g7dizi[i]);
+    }
   }
   return g7yenidizi;
 }
