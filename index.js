@@ -125,11 +125,10 @@ Aşağıdakileri yapmak için sonCesitiKaldir işlevini kullanın:
 */
 
 function sonCesitiKaldir(orijinalTatlar) {
-  let yeniliste = [];
-  yeniliste = orijinalTatlar.pop();
-  return yeniliste;
+  orijinalTatlar.pop();
+  return orijinalTatlar;
 }
-console.log(orijinalTatlar);
+console.log(sonCesitiKaldir(orijinalTatlar));
 
 /* Görev 5:
 Dizideki belirli bir indeksteki çeşniyi döndüren bir işlev yazın.
@@ -142,9 +141,10 @@ Aşağıdakileri yapmak için aşağıdaki indekstekiCesitiGetir işlevini kulla
    Örneğin: indekstekiCesitiGetir(orijinalTatlar, 2) çalıştırılmasıyla, Kakule'in başarıyla eklendiği varsayarsak sonuç "Ceviz" olucaktır.
 */
 
-function indekstekiCesitiGetir(/*kod buraya*/) {
-  /*kod buraya*/
+function indekstekiCesitiGetir(orijinalTatlar) {
+  return orijinalTatlar[2];
 }
+console.log(indekstekiCesitiGetir(orijinalTatlar));
 
 /* Görev 6:
 
