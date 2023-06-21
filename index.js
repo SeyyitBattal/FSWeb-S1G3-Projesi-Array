@@ -94,7 +94,7 @@ function dizi25Cesitmi(orijinalTatlar) {
 }
 dizi25Cesitmi(orijinalTatlar);
 
-/* Görev 3: ??????????????????????????????????????????????????????????????
+/* Görev 3: ???????????????????????????????????????????????????????????????????????????????*
 Pastane sahibi size yeni bir lezzet fikriyle geldi: Kakule! Bunun da çok tutacağından çok emin. Bu lezzeti eklemek için diziyi değiştirmeniz gerekir.
 
 Aşağıdakileri yapmak için cesitEkle işlevini kullanın:
@@ -161,9 +161,12 @@ Aşağıdakileri yapmak için ismeGoreCesitCikar işlevini kullanın:
   İPUCU: Bunun için .splice() kullanabilirsiniz.
 */
 
-function ismeGoreCesitCikar(/*kod buraya*/) {
-  /*kod buraya*/
+function ismeGoreCesitCikar(g6dizi, g6string) {
+  g6string = g6dizi.indexOf(g6string);
+  g6dizi.splice(g6string, 1);
+  return g6dizi;
 }
+console.log(ismeGoreCesitCikar(orijinalTatlar, "Tarçın"));
 
 /* Görev 7:
 
@@ -185,10 +188,14 @@ Aşağıdakileri yapmak için ismeGoreFiltrele işlevini kullanın:
   Bu sorunu çözmek için GELİŞMİŞ DİZİ YÖNTEMLERİNİ (yani .filter) KULLANMAYIN.
 */
 
-function ismeGoreFiltrele(/*kod buraya*/) {
-  /*kod buraya*/
+function ismeGoreFiltrele(g7dizi, g7string) {
+  let g7yenidizi = [];
+  if (g7yenidizi.includes(g7string) == true) {
+    g7yenidizi.push();
+  }
+  return g7yenidizi;
 }
-
+console.log(ismeGoreFiltrele(orijinalTatlar, "Çikolata"));
 /* ALIŞTIRMA */
 
 /* ALIŞTIRMA 1: Bir dizideki ortalama kelime sayısını döndüren bir fonksiyon yazın. Bu işlevi orijinalTatlar dizisinde test etmelisiniz, ancak bunu herhangi bir dizi için de kullanabilmelisiniz.
